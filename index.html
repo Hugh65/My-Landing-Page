@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background: #000;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.btn {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 40px;
+  background: #ff2e63;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(255,46,99,0.5);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background: #ff4f7b;
+}
+
+/* Invisible Click Areas */
+.hidden-link {
+  position: absolute;
+  background: transparent;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.link1 {
+  top: 10%;
+  left: 15%;
+  width: 20%;
+  height: 30%;
+}
+
+.link2 {
+  top: 45%;
+  right: 10%;
+  width: 25%;
+  height: 35%;
+}
+
+.link3 {
+  bottom: 5%;
+  left: 35%;
+  width: 30%;
+  height: 20%;
+}
+
+@media(max-width:768px){
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 12px 25px;
+  }
+}
+
+  </style>
+</head>
+<body>  <div class="container"><!-- Replace this image URL with your own -->
+<img class="main-image" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop" alt="Fashion Model">
+
+<div class="overlay">
+  <h1>Exclusive Fashion Reveal</h1>
+  <p>Tap anywhere to continue</p>
+  <a class="btn" href="https://YOUR-ADSTERRA-DIRECT-LINK.com" target="_blank">Open Now</a>
+</div>
+
+<!-- Invisible Adsterra Click Areas -->
+<a class="hidden-link link1" href="https://YOUR-ADSTERRA-DIRECT-LINK-1.com" target="_blank"></a>
+
+<a class="hidden-link link2" href="https://YOUR-ADSTERRA-DIRECT-LINK-2.com" target="_blank"></a>
+
+<a class="hidden-link link3" href="https://YOUR-ADSTERRA-DIRECT-LINK-3.com" target="_blank"></a>
+
+  </div></body>
+</html>
